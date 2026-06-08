@@ -1,3 +1,57 @@
+# # 15. Write a program to count the number of zeros in the following tuple:
+
+# a = (7, 0, 8, 0, 0, 9)
+
+# print(a.count(0))
+
+
+
+# # 14. Write a program to sum a list with 4 numbers.
+
+# num = [1, 22, 13, 10]
+
+# # new_num = 0
+# # for i in range(0, 4):
+# #     new_num += num[i]
+
+# # print(new_num)
+
+# print(sum(num))
+
+
+# # 13. Check that a tuple type cannot be changed in python.
+
+# num = (1, 2, 33, 11)
+
+# num[2] = 22
+
+# print(num)
+
+
+# # 12. Write a program to accept marks of 6 students and display them in a sorted manner.
+# marks = []
+
+# for i in range (1,8):
+#     mark = input(f"Enter Student marks {i}:")
+#     marks.append(mark)
+
+# marks.sort()
+
+# print(marks)
+
+
+
+# # 11. Write a program to store seven fruits in a list entered by the user.
+
+# fruits = []
+
+# for i in range (1,8):
+#     fruit = input(f"Name fruit {i}:")
+#     fruits.append(fruit)
+
+# print fruits()
+
+
 # # 10. Write a program to format the following letter using escape sequence characters
 
 # letter = "Hey, I am Yuvraj"
