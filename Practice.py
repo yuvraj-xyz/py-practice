@@ -3,15 +3,15 @@
 
 
 
-# 20. Create an empty dictionary. Allow 4 friends to enter their favorite language as value and
-# use key as their names. Assume that the names are unique.
+# # 20. Create an empty dictionary. Allow 4 friends to enter their favorite language as value and
+# # use key as their names. Assume that the names are unique.
 
-dict = {}
+# dict = {}
 
-for i in range (0, 4):
-    dict.update({(input("Enter Your Name : ")):input("Enter Your Favorite Language : ")})
+# for i in range (0, 4):
+#     dict.update({(input("Enter Your Name : ")):input("Enter Your Favorite Language : ")})
 
-print(dict)
+# print(dict)
 
 
 
@@ -39,7 +39,8 @@ print(dict)
 # s = set()
 
 # for i in range (0,8):
-#     s.add(input("Please Enter a Number : "))
+#     n= input("Please Enter a Number : ")
+#     s.add(int(n))
 
 # print(s)
 
