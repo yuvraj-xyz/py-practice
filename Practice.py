@@ -1,4 +1,50 @@
+# 22. Write a program to find out whether a student has passed or failed if it requires a total of
+# 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an
+# input from the user.
 
+# Assuming Each exam is of 100 Marks
+
+total_marks = 0
+x = 0
+
+for i in range(1,4):
+    n = input(f"Enter Marks of Subject {i} : ")
+    marks = int(n)
+
+    total_marks += marks
+    total_marks_percent = round((total_marks*100)/300, 1)
+
+    if(marks>=33):
+        x = x+1
+
+        if(i==3):
+            if(x==3 and total_marks_percent >=40):
+                print("Congratulations, You have Passed the exam!")
+                print("Total Marks : ", total_marks, "\nTotal Marks Percentage: ", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
+                break
+
+            else:
+                print("You have Failed the Exam!")
+                print("Congratulations, You have Passed the exam!")
+                print("Total Marks : ", total_marks, "\nTotal Marks Percentage: ", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
+                break
+
+
+
+
+
+
+# # 21. Write a program to find the greatest of four numbers entered by the user.
+
+# greatest = 0;
+# for i in range(1,5):
+#     n = input(f"{i} Enter the Number :")
+#     num = (int(n))
+
+#     if(num>greatest):
+#         greatest = num
+
+# print(greatest)
 
 
 
