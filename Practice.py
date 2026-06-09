@@ -1,3 +1,37 @@
+# 18. Can we have a set with 18 (int) and '18' (str) as a value in it?
+
+s = (18, "18")
+
+print(s, type(s))
+
+
+# # 17. Write a program to input eight numbers from the user and display all the unique numbers
+# # (once).
+
+# s = set()
+
+# for i in range (0,8):
+#     s.add(input("Please Enter a Number : "))
+
+# print(s)
+
+
+# # 16. Write a program to create a dictionary of Hindi words with values as their English
+# # translation. Provide user with an option to look it up!
+
+# language = {
+#     "Thanda":"Cool",
+#     "Zameen":"Ground",
+#     "Ambar":"Sky",
+#     "Garam":"Hot"
+# }
+
+# key = input("Please Enter one of these - Thanda/Garam/Zameen/Ambar :")
+
+# print(language[key])
+
+
+
 # # 15. Write a program to count the number of zeros in the following tuple:
 
 # a = (7, 0, 8, 0, 0, 9)
