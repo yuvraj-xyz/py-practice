@@ -1,34 +1,116 @@
-# 22. Write a program to find out whether a student has passed or failed if it requires a total of
-# 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an
-# input from the user.
 
-# Assuming Each exam is of 100 Marks
 
-total_marks = 0
-x = 0
 
-for i in range(1,4):
-    n = input(f"Enter Marks of Subject {i} : ")
-    marks = int(n)
 
-    total_marks += marks
-    total_marks_percent = round((total_marks*100)/300, 1)
+# # 26. Write a program to calculate the grade of a student from his marks from the following
+# # scheme:
+# # 90 – 100 => S+
+# # 80 – 90 => A
+# # 70 – 80 => B
+# # 60 – 70 => C
+# # 50 – 60 => D
+# # <50 => F
 
-    if(marks>=33):
-        x = x+1
+# x = input("Enter your marks: ")
+# marks = int(x)
 
-        if(i==3):
-            if(x==3 and total_marks_percent >=40):
-                print("Congratulations, You have Passed the exam!")
-                print("Total Marks : ", total_marks, "\nTotal Marks Percentage: ", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
-                break
+# if(marks>=90):
+#     print("You got a S+")
+# elif(marks>=80 and marks<90):
+#     print("You got a A")
+# elif(marks>=70 and marks<80):
+#     print("You got a B")
+# elif(marks>=60 and marks<70):
+#     print("You got a C")
+# elif(marks>=50 and marks<60):
+#     print("You got a D")
+# elif(marks<50):
+#     print("You got a F")
 
-            else:
-                print("You have Failed the Exam!")
-                print("Congratulations, You have Passed the exam!")
-                print("Total Marks : ", total_marks, "\nTotal Marks Percentage: ", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
-                break
 
+
+
+
+# # 25. Write a program which finds out whether a given name is present in a list or not
+
+# li = ["Yuvraj", "Paliwal"]
+
+# name = input("Type the name to find it: ")
+
+# for i in range (0, len(li)):
+#     if(li[i]==name):
+#         print("Found it!!!")
+#         break
+
+#     if(i == len(li)-1 and li[i]!=name):
+#         print("Name doen't exist in the list.")
+
+
+
+# # 24. Write a program to find whether a given username contains less than 10 characters or not
+
+# username = input("Enter your username: ")
+
+
+# if(len(username)<=10):
+#     print("Yes, Its less than or equal to 10")
+
+# else:
+#     print("NO, Its more than 10")
+
+
+
+
+# # 23. A spam comment is defined as a text containing following keywords: “Make a lot of
+# # money”, “buy now”, “subscribe this”, “click this”. Write a program to detect these spams
+
+# keywords = [
+#     "Make a lot of money",
+#     "buy now",
+#     "subscribe this",
+#     "click this"
+# ]
+
+# comment = input("Enter your comment: ")
+
+# for i in range (0, len(keywords)):
+#     if (comment == keywords[i]):
+#         print("This is Spam!!!!!")
+#         break
+
+#     if(i==len(keywords)-1):
+#         print ("All Good!!!")
+
+
+# # 22. Write a program to find out whether a student has passed or failed if it requires a total of
+# # 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an
+# # input from the user.
+
+# # Assuming Each exam is of 100 Marks
+
+# total_marks = 0
+# x = 0
+
+# for i in range(1,4):
+#     n = input(f"Enter Marks of Subject {i} : ")
+#     marks = int(n)
+
+#     total_marks += marks
+#     total_marks_percent = round((total_marks*100)/300, 1)
+
+#     if(marks>=33):
+#         x = x+1
+
+#         if(i==3):
+#             if(x==3 and total_marks_percent >=40):
+#                 print("Congratulations, You have Passed the exam!")
+#                 print("Total Marks :", total_marks, "\nTotal Marks Percentage :", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
+#                 break
+
+#             else:
+#                 print("You have Failed the Exam!")
+#                 print("Total Marks :", total_marks, "\nTotal Marks Percentage :", total_marks_percent, "%", f"\nYou Passed in {x} out of 3 Subjects")
+#                 break
 
 
 
