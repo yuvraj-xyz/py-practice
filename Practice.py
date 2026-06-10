@@ -1,4 +1,136 @@
+# # 36. Write a program to print multiplication table of n using for loops in reversed order.
 
+# n = int(input("Enter the number: "))
+
+# i = 10;
+# while(i>0):
+#     print(n*i)
+#     i-=1;
+
+
+
+
+# # 35. Write a program to print the following star pattern.
+# # * * *
+# # *   * for n = 3
+# # * * *
+
+# n = int(input("Enter the number: "))
+
+# for i in range(1, n+1):
+#     if(i%2!=0):
+#         print("*" * (n), end="")
+
+#     else:
+#         print("*", end="")
+#         print(" " * (n-2), end="")
+#         print("*", end="")
+
+#     print("")
+
+
+
+
+# # 34. Write a program to print the following star pattern:
+# # *
+# # **
+# # *** for n = 3
+
+# n = int(input("Enter the number: "))
+
+# for i in range(1, n+1):
+#     print("*" * (i), end="")
+#     print("")
+
+
+
+# # 33. Write a program to print the following star pattern.
+# #   *
+# #  ***
+# # ***** for n = 3
+
+# n = int(input("Enter the number: "))
+
+# for i in range(1, n+1):
+#     print(" " * (n-i), end="")
+#     print("*" * (2*i-1), end="")
+#     print("")
+
+
+
+# # 32. Write a program to calculate the factorial of a given number using for loop.
+
+# num = int(input("Enter Your Number: "))
+
+# fact = 1
+# for i in range(1, num+1):
+#     fact*=i
+
+# print(fact)
+
+
+
+# # 31. Write a program to find the sum of first n natural numbers using while loop
+
+# num = int(input("Enter the number: "))
+
+# sum=0
+# i=1
+# while(i<=num):
+#     sum+=i
+#     i+=1
+
+# print(sum)
+
+
+
+# # 30. Write a program to find whether a given number is prime or not
+
+# num = int(input("Enter your number: "))
+
+# for i in range(2, int(num/2)+1):
+#     if(num%i==0):
+#         print("Not a Prime Number!")
+#         break;
+
+# else:
+#     print("Prime No. found!")
+
+
+
+# # 29. Attempt problem 27 using while loop.
+
+# inp = input("Enter the Number: ")
+
+# num = int(inp)
+
+# i=1
+# while(i<11):
+
+#     print(i*num)
+#     i+=1
+
+
+# # 28. Write a program to greet all the person names stored in a list ‘l’ and which starts with S.
+
+# l = ["Harry", "Soham", "Sachin", "Rahul"]
+
+# name = input("Enter your name: ")
+
+# for i in range(0, len(l)):
+#     if(name==l[i] and l[i][0]=="S"):
+#         print("Hey, Nice to meet you!")
+
+
+# # 27. Write a program to print multiplication table of a given number using for loop
+
+# inp = input("Enter the Number: ")
+
+# num = int(inp)
+
+# for i in range(1, 11):
+
+#     print(i*num)
 
 
 
