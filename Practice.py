@@ -1,3 +1,36 @@
+# 38. Write a python program using function to convert Celsius to Fahrenheit.
+
+def func(c):
+    f = (c*1.8) + 32
+    return f
+
+celc = int(input("Enter the temperature in Celcius: "))
+
+print(func(celc))
+
+
+
+
+# # 37. Write a program using functions to find greatest of three numbers.
+
+# def greatest():
+#     a = int(input("Enter first Number: "))
+#     b = int(input("Enter second Number: "))
+#     c = int(input("Enter third Number: "))
+
+#     if(a>b and a>c):
+#         return a
+#     elif(b>a and b>c):
+#         return b
+#     else:
+#         return c
+    
+# print(greatest())
+
+
+
+
+
 # # 36. Write a program to print multiplication table of n using for loops in reversed order.
 
 # n = int(input("Enter the number: "))
