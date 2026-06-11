@@ -1,12 +1,27 @@
-# 38. Write a python program using function to convert Celsius to Fahrenheit.
+# 39. Write a recursive function to calculate the sum of first n natural numbers.
 
-def func(c):
-    f = (c*1.8) + 32
-    return f
+def sum(n):
+    if(n==0):
+        return 0
+    if(n==1):
+        return 1
+    
+    return n + sum(n-1)
 
-celc = int(input("Enter the temperature in Celcius: "))
+n = int(input("Enter the Number: "))
+print(sum(n))
 
-print(func(celc))
+
+
+# # 38. Write a python program using function to convert Celsius to Fahrenheit.
+
+# def func(c):
+#     f = (c*1.8) + 32
+#     return f
+
+# celc = int(input("Enter the temperature in Celcius: "))
+
+# print(func(celc), "F")
 
 
 
