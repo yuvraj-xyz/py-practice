@@ -1,15 +1,28 @@
-# 39. Write a recursive function to calculate the sum of first n natural numbers.
+# 40. Write a python function to print first n lines of the following pattern.
+# ***
+# **
+# *
 
-def sum(n):
-    if(n==0):
-        return 0
-    if(n==1):
-        return 1
+def patern():
+    n = int(input("Enter a number: "))
+
     
-    return n + sum(n-1)
 
-n = int(input("Enter the Number: "))
-print(sum(n))
+
+
+
+# # 39. Write a recursive function to calculate the sum of first n natural numbers.
+
+# def sum(n):
+#     if(n==0):
+#         return 0
+#     if(n==1):
+#         return 1
+    
+#     return n + sum(n-1)
+
+# n = int(input("Enter the Number: "))
+# print(sum(n))
 
 
 
