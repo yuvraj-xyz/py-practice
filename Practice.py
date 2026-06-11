@@ -1,13 +1,40 @@
-# 40. Write a python function to print first n lines of the following pattern.
-# ***
-# **
-# *
+# 42. Write a python function to remove a given word from a list and strip it at the same time.
 
-def patern():
-    n = int(input("Enter a number: "))
+def func():
 
+    fruits = ["Apple", "Mango", "Banana"]
+    word = input("Enter Your word: ")
+
+    fruits.remove(word)
+    print(fruits)
+
+func()
+
+
+# # 41. Write a python function which converts inches to cms.
+
+# def conv(n):
+
+#     return(n*2.54)
+
+# print(conv(99))
+
+
+
+
+# # 40. Write a python function to print first n lines of the following pattern.
+# # ***
+# # **
+# # *
+
+# def patern():
     
+#     n = int(input("Enter a number: "))
+#     for i in range(1, n+1):
+#         print("*" * (n - i + 1), end="")
+#         print("")
 
+# patern()
 
 
 
