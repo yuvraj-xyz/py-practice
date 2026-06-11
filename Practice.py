@@ -1,14 +1,29 @@
-# 42. Write a python function to remove a given word from a list and strip it at the same time.
+# # 43. Write a python function to print multiplication table of a given number
 
-def func():
+# def table():
 
-    fruits = ["Apple", "Mango", "Banana"]
-    word = input("Enter Your word: ")
+#     n = int(input("Enter the number for the table: "))
 
-    fruits.remove(word)
-    print(fruits)
+#     i = 1
+#     while(i<11):
+#         print(n, "X", i, "=", n*i)
+#         i+=1
 
-func()
+# table()
+
+
+
+# # 42. Write a python function to remove a given word from a list and strip it at the same time.
+
+# def func():
+
+#     fruits = ["Apple", "Mango", "Banana"]
+#     word = input("Enter Your word: ")
+
+#     fruits.remove(word)
+#     print(fruits)
+
+# func()
 
 
 # # 41. Write a python function which converts inches to cms.
