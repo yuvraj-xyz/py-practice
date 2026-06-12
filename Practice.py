@@ -1,3 +1,177 @@
+# 53. Create a class with a class attribute a; create an object from it and set ‘a’ directly using
+# ‘object.a = 0’. Does this change the class attribute?
+
+class cl:
+    a = "Anything"
+
+
+
+
+# # 52. Write a class “Calculator” capable of finding square, cube and square root of a number.
+
+# class Calculator:
+#     def __init__(self, n):
+#         self.n = n
+
+#     def square(self):
+#         print(f"Square of {self.n} is: {self.n*self.n}")
+
+#     def cube(self):
+#         print(f"Cube of {self.n} is: {self.n*self.n*self.n}")
+
+#     def root(self):
+#         print(f"Square Root of {self.n} is: {self.n**1/2}")
+
+# cal = Calculator(4)
+# cal.square()
+# cal.cube()
+# cal.root()
+
+
+# # 51. Create a class “Programmer” for storing information of few programmers working at
+# # Microsoft.
+
+# class Programmer:
+#     company = "Microsoft"
+
+#     def __init__(self, name, salary, language):
+#         self.name = name
+#         self.salary = salary
+#         self.language = language
+
+# p = Programmer("Yuvraj", 4000000, "Python")
+# print(p.name, p.salary, p.language, p.company)
+
+# r = Programmer("Rohan", 5000000, "JavaScruipt")
+# print(r.name, r.salary, r.language)
+
+
+# # 50. Write a program to wipe out the content of a file using python.
+
+# with open("Files/this_copy.txt", "w") as f:
+#     f.write("")
+
+
+
+
+# # 49. Write a program to make a copy of a texfilesle “this.txt”.
+
+# with open("Files/this.txt") as f:
+#     content = f.read()
+
+# with open("Files/this_copy.txt", "w") as f:
+#     f.write(content)
+
+
+
+
+# # 48. Repeat program 4 for a list of such words to be censored.
+
+# words = ["donkey", "bad", "ganda", "worst", "absurd"]
+
+# with open("Files/donk.txt") as f:
+#     contents = f.read()
+
+# for word in words:
+#     contents = contents.replace(word, "#" * len(word))
+
+# with open("Files/donk.txt", "w") as f:
+#     f.write(contents)
+
+# with open("Files/donk.txt") as f:
+#     print(f.read())
+
+
+
+
+
+# # 47. A file contains a word “Donkey” multiple times. You need to write a program which
+# # replaces this word with ##### by updating the same file.
+
+# with open("Files/donk.txt") as f:
+
+#     contents = f.read()
+
+# contents = contents.replace("donkey", "#####")
+
+# with open("Files/donk.txt", "w") as f:
+
+#     f.write(contents)
+
+# with open("Files/donk.txt") as f:
+
+#     print(f.read())
+
+
+
+
+# # 46. Write a program to generate multiplication tables from 2 to 20 and write it to the different
+# # files. Place these files in a folder for a 13-year-old.
+
+
+# def genrateTable(n):
+
+#     table = ""
+#     for i in range(1, 11):
+#         table += f"{n} X {i} = {n*i}\n"
+
+#     with open(f"Table/table_{n}.txt", "w") as f:
+#         f.write(table)
+        
+# for i in range(2, 22):
+#     genrateTable(i)
+
+
+
+# # 45. The game() function in a program lets a user play a game and returns the score as an
+# # integer. You need to read a file ‘Hi-score.txt’ which is either blank or contains the previous
+# # Hi-score. You need to write a program to update the Hi-score whenever the game()
+# # function breaks the Hi-score.
+# import random
+
+# def game():
+
+#     print("You playing the game.....")
+#     score = random.randint(99, 999)
+
+#     with open("Hi-score.txt") as f:
+#         hi_score = f.read()
+
+#         print(hi_score)
+
+#         if(hi_score!=""):
+#             hi_score = int(hi_score)
+            
+#         else:
+#             high_score = 0   
+
+#     print(f"Your Score is: {score}")
+
+#     cnt = 0
+#     if(score>hi_score):
+#         with open("Hi-score.txt", "w") as f:
+#             f.write(str(score))
+#             print("Congratulations, You got a Hi-Score!")
+
+#     return score
+
+# game()
+
+
+# # 44. Write a program to read the text from a given file ‘poems.txt’ and find out whether it
+# # contains the word ‘twinkle’.
+
+# with open("poems.txt") as f:
+#         content = f.read()
+
+#         if("twinkle" in content):
+#             print("Found the word")
+#         else:
+#             print("Not found")
+
+
+
+
 # # 43. Write a python function to print multiplication table of a given number
 
 # def table():
@@ -15,14 +189,13 @@
 
 # # 42. Write a python function to remove a given word from a list and strip it at the same time.
 
-# def func():
+# def func(l, word):
 
-#     fruits = ["Apple", "Mango", "Banana"]
-#     word = input("Enter Your word: ")
+#     for item in l:
 
-#     fruits.remove(word)
-#     print(fruits)
 
+# l = ["Harry", "Subhan", "Sohan", "an"]
+# word = input("Enter Your word: ")
 # func()
 
 
@@ -56,8 +229,6 @@
 # # 39. Write a recursive function to calculate the sum of first n natural numbers.
 
 # def sum(n):
-#     if(n==0):
-#         return 0
 #     if(n==1):
 #         return 1
     
