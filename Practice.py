@@ -2,6 +2,79 @@
 
 
 
+
+# # 58. Create a class ‘Employee’ and add salary and increment properties to it. Write a method
+# # ‘salaryAfterIncrement’ method with a @property decorator with a setter which changes
+# # the value of increment based on the salary.
+
+# class Employee:
+#     salary = 100000
+#     increament = 20
+
+#     @property
+#     def salaryAfterIncreament(self):
+#         return self.salary + self.salary*(self.increament/100)
+    
+#     @salaryAfterIncreament.setter
+#     def salaryAfterIncreament(self, salary):
+#         self.increament = ((salary/self.salary)-1) * 100
+
+# a = Employee()
+
+# # print(a.salaryAfterIncreament)
+# a.salaryAfterIncreament = int(input("Enter your monthly Salary: "))
+
+# print(f"You Salary increased by {round(a.increament, 2)}%")
+
+
+
+
+# # 57. Create a class ‘Pets’ from a class ‘Animals’ and further create a class ‘Dog’ from ‘Pets’.
+# # Add a method ‘bark’ to class ‘Dog’.
+
+# class Animals():
+#     pass
+
+# class Pets(Animals):
+#     pass
+
+# class Dog(Pets):
+
+#     @staticmethod           # replaces the need of adding self as a parameter to bark()
+#     def bark():
+#         print("Dog is Barking......")
+
+# d = Dog()
+# d.bark()
+
+
+
+# # 56. Create a class (2-D vector) and use it to create another class representing a 3-D vector
+
+# class twoDvector:
+#     def __init__(self, i, j):
+#         self.i = i
+#         self.j = j
+
+#     def show(self):
+#         print(f"The Vector is: {self.i} + {self.j}")
+
+# class threeDvector(twoDvector):
+#     def __init__(self, i, j, k):
+#         super().__init__(i, j)
+#         self.k = k
+
+#     def show(self):
+#         print(f"The Vector is: {self.i} + {self.j} + {self.k}")
+
+# a = twoDvector(2, 45)
+# b = threeDvector(35, 5, 9)
+
+# a.show()
+# b.show()
+
+
+
 # # 55. Can you change the self-parameter inside a class to something else (say “slf”)? Try
 # # changing self to “slf” and see the effects.
 
