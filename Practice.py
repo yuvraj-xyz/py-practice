@@ -1,9 +1,57 @@
-# 53. Create a class with a class attribute a; create an object from it and set ‘a’ directly using
-# ‘object.a = 0’. Does this change the class attribute?
 
-class cl:
-    a = "Anything"
 
+
+
+# # 55. Can you change the self-parameter inside a class to something else (say “slf”)? Try
+# # changing self to “slf” and see the effects.
+
+# class change:
+#     def func(slf):
+#         print("Yes it works!")
+
+# x = change()
+# x.func()
+
+
+
+
+# # 54. Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats) and get
+# # fare information of train running under Indian Railways.
+
+# from random import randint
+
+# class Train:
+#     def __init__(self, train_no, frm, to):
+#         self.train_no = train_no
+#         self.frm = frm
+#         self.to = to
+
+#     def book(self):
+#         print(f"The ticket is confirmed for train {self.train_no} from {self.frm} to {self.to}")
+
+#     def status(self):
+#         print(f"Train Number {self.train_no} running on time!")
+
+#     def fare(self):
+#         print(f"Your ticket price for train number {self.train_no} from {self.frm} to {self.to} is: {randint(545, 1500)}")
+
+# t = Train(124568, "Narnaul", "Delhi")
+
+# t.book()
+# t.status()
+# t.fare()
+
+
+# # 53. Create a class with a class attribute a; create an object from it and set ‘a’ directly using
+# # ‘object.a = 0’. Does this change the class attribute?
+
+# class cl:
+#     a = "Anything"
+
+# obj = cl()
+
+# obj.a = 0
+# print(obj.a)
 
 
 
