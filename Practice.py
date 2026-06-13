@@ -1,3 +1,40 @@
+# 59. The Perfect Guess
+# 
+# We are going to write a program that generates a random number and asks the user to
+# guess it.
+# If the player’s guess is higher than the actual number, the program displays “Lower
+# number please” .
+# Similarly, if the user’s guess is too low, the program prints “Higher number please” .
+# When the user guesses the correct number, the program displays the number of
+# guesses the player used to arrive at the number.
+
+from random import randint
+
+
+num = randint(0, 100)
+userNum = -1
+
+guesses = 0
+while(userNum!=num):
+
+    userNum = int(input("Guess the Number: "))
+
+    if(userNum>num):
+        print("Lower number please...")
+        guesses +=1
+
+    elif(userNum<num):
+        print("Higher number please...")
+        guesses +=1
+
+    print("Perfect Guess!!!")
+    print(f"You took {guesses} guesses to guess the number {num}")
+
+
+
+
+
+
 
 
 
