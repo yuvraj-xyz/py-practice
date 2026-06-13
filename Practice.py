@@ -1,3 +1,12 @@
+l = ["apple", "mango", "banana"]
+result = ", and, ".join(l)
+print(result)
+
+
+
+
+
+
 # # 64. Store the multiplication tables generated in problem 62 in a file named Tables.txt .
 
 # num = int(input("Enter a number: "))
