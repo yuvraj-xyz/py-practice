@@ -1,4 +1,2 @@
-# for item in data:
-#     if(item=="twinkle"):
-#         print("Found twinkle")
-#         break
+except Exception as e:
+    print(e)

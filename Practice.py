@@ -1,34 +1,126 @@
-# 59. The Perfect Guess
-# 
-# We are going to write a program that generates a random number and asks the user to
-# guess it.
-# If the player’s guess is higher than the actual number, the program displays “Lower
-# number please” .
-# Similarly, if the user’s guess is too low, the program prints “Higher number please” .
-# When the user guesses the correct number, the program displays the number of
-# guesses the player used to arrive at the number.
+# # 64. Store the multiplication tables generated in problem 62 in a file named Tables.txt .
 
-from random import randint
+# num = int(input("Enter a number: "))
+
+# with open("Files/tab.txt", "a") as f:
+    
+#     table = [num * i for i in range(1,11)]
+#     f.write(str(table) + "\n") 
 
 
-num = randint(0, 100)
-userNum = -1
 
-guesses = 0
-while(userNum!=num):
 
-    userNum = int(input("Guess the Number: "))
 
-    if(userNum>num):
-        print("Lower number please...")
-        guesses +=1
 
-    elif(userNum<num):
-        print("Higher number please...")
-        guesses +=1
+# # 63. Write a program to display a/b where a and b are integers. If b=0, display infinite by
+# # handling the ‘ZeroDivisionError’ .
 
-    print("Perfect Guess!!!")
-    print(f"You took {guesses} guesses to guess the number {num}")
+# try:
+#     a = int(input("Enter a number: "))
+#     b = int(input("Enter another number: "))
+#     print(a/b)
+
+# except ZeroDivisionError as z:
+#     print(z)
+
+# else:
+#     print("I am inside else now...")     #with run with try only
+
+
+
+
+
+
+# # 62. Write a list comprehension to print a list which contains the multiplication table of a user
+# # entered number.
+
+# num = int(input("Enter a number: "))
+
+# table = [num * i for i in range(1,11)]
+
+# print(table)
+
+
+
+
+
+# # 61. Write a program to print third, fifth and seventh element from a list using enumerate
+# # function.
+
+# li = [1,2,3,4,5,6,7,8,9]
+
+# for i, item in enumerate(li):
+#     if(i==2 or i==4 or i==6):
+#         print(item)
+
+
+
+
+
+
+# # 60. Write a program to open three files 1.txt, 2.txt and 3.txt. If any of these files are not
+# # present, a message without exiting the program must be printed prompting the same.
+
+# try:
+#     with(
+#     open("1.txt", "r") as a,
+#     open("2.txt") as b,
+#     open("3.txt") as c
+# ):
+#         print(a.read())
+#         print(b.read())
+#         print(c.read())
+
+# except Exception as e:
+#     print(e)
+
+# finally:
+#     print("Thank You")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # 59. The Perfect Guess
+# # 
+# # We are going to write a program that generates a random number and asks the user to
+# # guess it.
+# # If the player’s guess is higher than the actual number, the program displays “Lower
+# # number please” .
+# # Similarly, if the user’s guess is too low, the program prints “Higher number please” .
+# # When the user guesses the correct number, the program displays the number of
+# # guesses the player used to arrive at the number.
+
+# from random import randint
+
+
+# num = randint(0, 100)
+# userNum = -1
+
+# guesses = 0
+# while(userNum!=num):
+
+#     userNum = int(input("Guess the Number: "))
+
+#     if(userNum>num):
+#         print("Lower number please...")
+#         guesses +=1
+
+#     elif(userNum<num):
+#         print("Higher number please...")
+#         guesses +=1
+
+# print("Perfect Guess!!!")
+# print(f"You took {guesses} guesses to get the number {num}")
 
 
 
