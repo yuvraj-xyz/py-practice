@@ -1,6 +1,33 @@
-l = ["apple", "mango", "banana"]
-result = ", and, ".join(l)
-print(result)
+# Sum integers from 1 to N with a loop.
+n = int(input("Enter the number: "))
+
+total = 0
+# i = 1
+# while(i<=n):
+#     total+=i
+#     i+=1
+
+for i in range(n+1):
+    total+=i
+
+print(int(total))
+
+
+
+
+# # Sum integers from 1 to N.
+# n = int(input("Enter the number: "))
+
+# total = (n/2)*(1+n)
+# print(round(total))
+
+
+
+
+
+# l = ["apple", "mango", "banana"]
+# result = ", and, ".join(l)
+# print(result)
 
 
 
