@@ -1,4 +1,4 @@
-# Practice — daily coding habit
+# Practice — daily coding habit. 
 
 This repository stores small Python practice files. I push daily to build a habit and track activity.
 
